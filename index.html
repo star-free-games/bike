@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Bike Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Bike Shop</h1>
+        <p>Your Perfect Bike is Just a Call Away!</p>
+    </header>
+
+    <section class="car-list">
+        <!-- Bike 1 -->
+        <div class="car" onclick="showCarDetails('car1')">
+            <div class="image-container">
+                <img src="car1-1.jpg" alt="Honda City">
+            </div>
+            <div class="overlay">
+                <h2>Honda City 2018</h2>
+                <p>Honda</p>
+                <p class="price">₹5,80,000</p>
+            </div>
+        </div>
+
+        <!-- Bike 2 -->
+        <div class="car" onclick="showCarDetails('car2')">
+            <div class="image-container">
+                <img src="car2-1.jpg" alt="Maruti Swift">
+            </div>
+            <div class="overlay">
+                <h2>Maruti Swift 2020</h2>
+                <p>Maruti Suzuki</p>
+                <p class="price">₹6,20,000</p>
+            </div>
+        </div>
+
+        <!-- Bike 3 -->
+        <div class="car" onclick="showCarDetails('car3')">
+            <div class="image-container">
+                <img src="car3-1.jpg" alt="Hyundai Creta">
+            </div>
+            <div class="overlay">
+                <h2>Hyundai Creta 2019</h2>
+                <p>Hyundai</p>
+                <p class="price">₹9,50,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Section -->
+    <section id="car-details-section" class="car-details-section hidden">
+        <!-- Honda City -->
+        <div id="details-car1" class="car-details">
+            <h2>Honda City 2018</h2>
+            <p>Price: ₹5,80,000</p>
+            <p>Petrol, 50,000 km, First owner</p>
+            <div class="car-images">
+                <img src="car1-2.jpg" alt="Honda City Image 1">
+                <img src="car1-3.jpg" alt="Honda City Image 2">
+                <img src="car1-4.jpg" alt="Honda City Image 3">
+            </div>
+            <a href="tel:+918423833813" class="call-to-action">📞 Call Now for Purchase</a>
+            <button onclick="goHome()">Back to Shop</button>
+        </div>
+
+        <!-- Maruti Swift -->
+        <div id="details-car2" class="car-details">
+            <h2>Maruti Swift 2020</h2>
+            <p>Price: ₹6,20,000</p>
+            <p>Diesel, 30,000 km, First owner</p>
+            <div class="car-images">
+                <img src="car2-2.jpg" alt="Maruti Swift Image 1">
+                <img src="car2-3.jpg" alt="Maruti Swift Image 2">
+                <img src="car2-4.jpg" alt="Maruti Swift Image 3">
+            </div>
+            <a href="tel:+918423833813" class="call-to-action">📞 Call Now for Purchase</a>
+            <button onclick="goHome()">Back to Shop</button>
+        </div>
+
+        <!-- Hyundai Creta -->
+        <div id="details-car3" class="car-details">
+            <h2>Hyundai Creta 2019</h2>
+            <p>Price: ₹9,50,000</p>
+            <p>Petrol, 40,000 km, Second owner</p>
+            <div class="car-images">
+                <img src="car3-2.jpg" alt="Hyundai Creta Image 1">
+                <img src="car3-3.jpg" alt="Hyundai Creta Image 2">
+                <img src="car3-4.jpg" alt="Hyundai Creta Image 3">
+            </div>
+            <a href="tel:+918423833813" class="call-to-action">📞 Call Now for Purchase</a>
+            <button onclick="goHome()">Back to Shop</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
